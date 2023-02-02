@@ -1,9 +1,11 @@
 import { nanoid } from 'nanoid'
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { Formik, Field, ErrorMessage  } from 'formik';
 import * as yup from 'yup';
+import { useDispatch } from "react-redux";
 
 import { StyleForm } from './Form.styled'
+import { addContact } from "redux/contactsSlice";
 
 const initialValues = {
   name: '', number: ''
@@ -28,12 +30,12 @@ const FormErrorNumber = ({ name }) => {
   )
 }
 
-const FormSubmit = ({ onSubmit }) => {
-  const handlSubmit = (value, {resetForm}) => {
+const FormSubmit = () => {
+  const dispatch = useDispatch();
+  const handlSubmit = (value, { resetForm }) => {
     const {name, number } = value
     const arrayContact = { id: nanoid(), name, number }
-
-    onSubmit(arrayContact)
+    dispatch(addContact(arrayContact))
     resetForm()
   }
 
@@ -65,8 +67,8 @@ const FormSubmit = ({ onSubmit }) => {
   );
 }
 
-FormSubmit.propTypes = {
-    onSubmit: PropTypes.func.isRequired,
-}
+// FormSubmit.propTypes = {
+//     onSubmit: PropTypes.func.isRequired,
+// }
 
 export default FormSubmit;
