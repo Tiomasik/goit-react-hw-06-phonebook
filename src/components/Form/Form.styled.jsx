@@ -8,9 +8,12 @@ export const StyleForm = styled(Form) `
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid tomato;
+    border-radius: 10px;
     padding: 20px 0;
     margin-bottom: 20px;
+    background-color: #f0f0f7;
+    box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+                
 
     label{
         font-weight: 500;
@@ -21,6 +24,7 @@ export const StyleForm = styled(Form) `
         padding: 3px;
         margin-bottom:20px;
         font-size: 20px;
+        border-radius: 5px;
     }
 
     button{

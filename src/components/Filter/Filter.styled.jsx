@@ -12,4 +12,5 @@ export const StyleInput = styled.input `
     margin-right: auto;
     width: 200px;
     padding: 3px;
+    border-radius: 5px;
 `

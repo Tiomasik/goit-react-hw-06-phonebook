@@ -19,7 +19,7 @@ export const ContactList = () => {
                     number={number}
                     id={id} />
             </Item>)}
-    </List>)
+        </List>)
 }
 
 ContactList.propTypes = {

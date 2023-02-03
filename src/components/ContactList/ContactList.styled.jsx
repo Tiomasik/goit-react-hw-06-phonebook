@@ -10,8 +10,10 @@ export const List = styled.ul `
     gap:10px;
 `
 export const Item = styled.li `
-    padding:0 5px;
+    padding:0 10px;
+    background-color: #f0f0f7;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;

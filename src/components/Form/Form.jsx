@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid'
-// import PropTypes from 'prop-types';
+
 import { Formik, Field, ErrorMessage  } from 'formik';
 import * as yup from 'yup';
 import { useDispatch } from "react-redux";
@@ -66,9 +66,5 @@ const FormSubmit = () => {
     </>    
   );
 }
-
-// FormSubmit.propTypes = {
-//     onSubmit: PropTypes.func.isRequired,
-// }
 
 export default FormSubmit;
