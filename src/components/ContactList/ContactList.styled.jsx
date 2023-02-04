@@ -35,3 +35,16 @@ export const Item = styled.li `
         font-weight: 500;
     }
 `
+export const Info = styled.p `
+    justify-content: center;
+    color: tomato;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    gap: 5px;
+    
+`
+
+export const Filter = styled.span `
+    font-weight: 700;
+`
