@@ -26,7 +26,7 @@ export const ContactList = () => {
                 </Item>)}
             </List >
         </>
-        )
+    )
 }
 
 export default ContactList
